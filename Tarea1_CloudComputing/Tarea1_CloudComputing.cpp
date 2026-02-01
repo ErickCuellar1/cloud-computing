@@ -6,26 +6,27 @@
 #define chunk 50
 #define mostrar 20
 
-void imprimeArreglo(float* d);
+void imprimeArreglo(int* d);
 
 int main() {
 
     std::cout << "Sumando Arreglos en Paralelo!" << std::endl;
 
-    float a[N], b[N], r[N];
+    int a[N], b[N], r[N];
     int i;
 
     int pedazos = chunk;
 
-    for (i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++) {
         a[i] = i;
         b[i] = i + 10;
     }
 
     
 
-#pragma omp parallel for shared(a,b,c,pedazos) private(i) schedule(static, pedazos)
-    for (i = 0; i < N; i++) {
+#pragma omp parallel for shared(a,b,r,pedazos) private(i) schedule(static, pedazos)
+
+    for (int i = 0; i < N; i++) {
         r[i] = a[i] + b[i];
     }
 
@@ -38,7 +39,7 @@ int main() {
 
 }
 
-void imprimeArreglo(float* d) {
+void imprimeArreglo(int* d) {
     for (int x = 0; x < mostrar; x++) {
         std::cout << d[x] << " - ";
     }

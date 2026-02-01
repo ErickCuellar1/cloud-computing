@@ -1,0 +1,49 @@
+# Compiled executables
+*.exe
+*.out
+
+# Object files
+*.obj
+*.o
+
+# Debug files
+*.pdb
+*.ilk
+*.idb
+
+# Linker files
+*.exp
+*.lib
+
+# Visual Studio temporary files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+
+# VS Code
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/c_cpp_properties.json
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Tarea1_CloudComputing/Tarea1_CloudComputing.vcxproj" />
+</Solution>
